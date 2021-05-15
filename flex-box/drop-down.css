@@ -1,0 +1,37 @@
+body {
+  height: 100%;
+}
+
+.drop-down-input {
+  width: 50%;
+  height: 18px;
+  min-width: 500px;
+}
+.drop-down {
+  display: none;
+  width: 50%;
+  min-width: 500px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.drop-down-input-section--content {
+  display: flex;
+  align-items: center;
+}
+
+.drop-down-input-section--content-contentLogo {
+  padding: 5px;
+}
+
+.drop-down-input-section--content-contentLogo-img {
+  border-radius: 50%;
+  width: 4rem;
+}
+.drop-down-input-section--content-summary {
+  padding: 5px;
+}
+
+/*modifiers*/
+/* '~' is used as it is the sibling element*/
+.drop-down-input:focus ~ .drop-down {
+    display: block;
+}
